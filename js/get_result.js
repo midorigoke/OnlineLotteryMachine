@@ -2,7 +2,7 @@
 
 const result_element = document.getElementById('result');
 
-let result_old;
+let result_old = '';
 
 const result_xhr = new XMLHttpRequest();
 
