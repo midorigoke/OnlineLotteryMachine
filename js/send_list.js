@@ -49,7 +49,7 @@ document.getElementById('run_button').addEventListener('click', function(evt){
 
 		xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
-		xhr.send('data=' + encodeURIComponent(JSON.stringify(list_array)));
+		xhr.send('data=' + encodeURIComponent(JSON.stringify(list_array).replace(/%20/g, '+')));
 		
 	}
 });
